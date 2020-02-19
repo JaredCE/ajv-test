@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "file://schemas/array-item.schema.json",
+    "title": "array-item.schema",
+    "description": "array-item.schema",
+    "type": "object",
+    "properties": {
+        "_source": {
+            "type": "object",
+            "$ref": "/an-object.schema.json#"
+        }
+    },
+    "required": ["_source"]
+}

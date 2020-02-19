@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "file://schemas/a_schema.schema.json",
+    "title": "a_schema.schema",
+    "description": "a_schema.schema",
+    "type": "object",
+    "properties": {
+        "iso_code2": {
+            "type": "string"
+        }
+    },
+    "required": ["iso_code2"]
+}

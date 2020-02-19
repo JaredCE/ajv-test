@@ -1,1 +1,39 @@
-
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "file://schemas/main.schema.json",
+    "title": "main schema",
+    "description": "the main schema",
+    "type": "object",
+    "properties": {
+        "a_definition": {
+            "$ref": "/shared/shared.definitions.json#/definitions/a_definition"
+        },
+        "another_title": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "a_referenced_schema": {
+            "$ref": "/a_referenced_schema.schema.json#"
+        },
+        "either_null_or_a_schema": {
+            "oneOf": [
+                {
+                    "$ref": "/a_schema.schema.json#"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        },
+        "a_complex_referenced_schema": {
+            "type": "object",
+            "$ref": "/a_complex_referenced_schema.schema.json#"
+        }
+    },
+    "required": ["a_complex_referenced_schema", "another_title", "a_definition", "a_referenced_schema", "either_null_or_a_schema", "id", "title"]
+}

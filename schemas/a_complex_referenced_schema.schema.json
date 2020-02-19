@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "file://schemas/a_complex_referenced_schema.schema.json",
+    "title": "a_complex_referenced_schema",
+    "description": "a_complex_referenced_schema",
+    "type": "object",
+    "properties": {
+        "hits": {
+            "type": "array",
+            "items": {
+                "$ref": "/array-item.schema.json#"
+            }
+        }
+    },
+    "required": ["hits"]
+}
