@@ -2,21 +2,23 @@
     "a_definition": "no",
     "either_null_or_a_schema": null,
     "a_referenced_schema": {
-        "name": "John"
+        "name": "Sally"
     },
     "a_complex_referenced_schema": {
         "hits": [
             {
                 "_source": {
                     "a_definition": "no",
-                    "more_complex_data": {},
+                    "more_complex_data": {
+                        "title": "Destroid 11 Get Stupid"
+                    },
                     "another_number": 1,
                     "a_number": "1"
                 }
             }
         ]
     },
-    "id": "14594890480032",
-    "title": "All Lies",
-    "another_title": null
+    "id": "14599578750032",
+    "title": "Get Stupid",
+    "another_title": ""
 }
